@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .btnnav{
+            border-radius: 10%;
+            margin-left: 10px;
+            height: 30px;
+            width: 130px;
+            color: rgb(174, 66, 27);
+        }
+
+        .btnnav:hover{
+            background-color: rgb(9, 9, 49);
+            color: aliceblue;
+        }
+
+        .btnfooter{
+            margin-left: 10px;
+            height: 50px;
+            width: 150px;
+            background-color: rgba(40, 24, 111, 0.000000000001);
+            color: white;
+            border: 0px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            gap:10px
+        }
+
+        .btnfooter:hover{
+            background-color: white;
+            color: chocolate;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .card{
+            border: 1px blue solid;
+            color: white;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* o @media serve para alterar as propriedades das tags com base no tamnho do dispositivo
+        para garantir a responsividade do site, temos que verificar como fica a estilização 
+        em varios tamnhos de telas diferentes, pode ser que no computador fique ok, porem quando acessado
+        pelo celular o site quebre. Nesse caso será necessário aplicar ajustes no tamanho de tela com 
+        o @media() 
+        
+        * Usamos o !important para forçar a estilização em uma tag, como a tag pode ter id e varias classes
+        o html e css precisam saber qual estilo aplicar, forçamos isso usando o !important no final do atributo
+
+        */
+        @media(max-width:750px){
+            button{
+                width: 50px!important;
+                height: 30px!important;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+    Semantica: é a parte linguistica que estuda o significado e sentidos das palavras!
+    A partir da versão 5 do HTML , surgiram as tags semanticas que descrevem o significado
+    das parte do seu site para o navegador e outros desenvolvedores entenderem!
+    -->
+
+<header style="background-color: rgb(22, 4, 4);height: 10vh;display: flex;align-items: center;justify-content: center;"> <!-- cabeçalho da pagina-->
+
+    <nav style="display: flex;align-items: center;" >
+        <img src="https://scontent.cdninstagram.com/v/t51.2885-19/465833398_531156846561348_4004186599650738337_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=h_dphmfWzLcQ7kNvwGIo9rW&_nc_oc=Adpo554YloJnYGiKMhisCYPB6Lrbv7mT58mpvQev2FxtoKMyKfbT52A7uzPJBD8EqJg&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_ss=7a689&oh=00_AQEL58S_tgydi6Dcoxmyw9ytp_K07uotSDW356jqyIEOCA&oe=6A839D09" 
+        alt="" height="30px" width="50px">
+
+        <a href=""><button class="btnnav">Inicio</button></a>
+        <a href=""><button class="btnnav">Sobre Nós</button></a>
+        <a href=""><button class="btnnav">Trabelhe conosco</button></a>
+    </nav>
+
+</header>
+
+<main style="background-color: rgb(42, 40, 40);height: 70vh;"> <!-- COnteudo principal , é onde irão as informações do site em si -->
+
+<section style="background-color: rgb(36, 36, 37);height: 40%;
+display: flex;justify-content: center;align-items: center;flex-direction: column;"> <!-- Section , é uma sessão da pagina aonde voce pode colocar um conteudo 
+        Voce pode separar seu site em varias sessões!-->
+    <h1 style="color: white;">MAIMONI VEICULOS</h1>
+    <hr>
+    <br>
+    <p style="color: white;">COMPRA • VENDA • FINANCIAMENTO
+
+💰 Melhor preço da cidade 
+💯 Qualidade, transparência e confiança
+📍 Rua 3A, 1922 – Jardim América, Rio Claro-SP
+    </p>
+</section>
+
+<section style="background-color: rgb(118, 118, 120);height: 60%;display: flex;">
+
+    <div style="width: 50%;height: 100%;background-color: rgb(70, 71, 71);">
+        <div class="card">
+            <h4>Autobot</h4>
+            <img src="https://cdn.carrosp.com.br/upload/imgcache/0/573/0703e8fa6d8dc3b344cba4439fddc08e.webp" 
+            alt="" height="50%"  width="100px">
+            <p>$: 999999,99</p>
+        </div>
+    </div>
+
+    <div style="width: 50%;height: 100%;background-color: rgb(130, 128, 127);">
+        <div class="card" style="border: 1px solid red;">
+            <h4>DECEPTCON?</h4>
+            <img src="https://cdn.carrosp.com.br/upload/imgcache/0/573/0703e8fa6d8dc3b344cba4439fddc08e.webp"
+            alt="" height="60%"  width="100px">
+            <p>$: **************</p>
+        </div>
+    </div>
+</section >
+
+</main>
+
+<footer style="background-color: rgb(85, 84, 84);height: 20vh;display: flex;align-items: center;justify-content: center;"> <!-- Footer , é o rodapé da página-->
+    <nav style="display: flex;justify-content: center;align-items: center;">
+        <a href="">
+            <button class="btnfooter"> 
+                <img width="48" height="48" 
+                src="https://img.icons8.com/color/48/instagram-new--v1.png" 
+                alt="instagram-new--v1"/> Instagram 
+            </button> 
+        </a>
+        <a href=""> 
+            <button class="btnfooter">
+                <img width="48" height="48" 
+                src="https://img.icons8.com/ios-filled/50/tiktok--v1.png" alt="tiktok--v1"/>  TikTok 
+            </button> 
+        </a>
+        <a href=""> 
+            <button class="btnfooter"> 
+                <img width="48" height="48" 
+                src="https://img.icons8.com/ios-filled/50/twitterx--v1.png" 
+                alt="twitterx--v1"/> X 
+            </button> 
+        </a>
+    </nav>
+</footer>
+
+
+
+</body>
+</html>
