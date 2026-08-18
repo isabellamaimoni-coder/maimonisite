@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ANIMAIS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: #f1f8e9;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .titulo {
+            text-align: center;
+            margin: 40px 0 30px;
+            color: #2e7d32;
+        }
+
+
+
+        .card-img-top {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .container-cards {
+            margin-bottom: 50px;
+        }
+
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-success navbar-dark">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">
+                     Mundo dos Animais
+                </a>
+
+                <button class="navbar-toggler"
+                    type="button">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav me-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                Início
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Animais
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Mamíferos
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Aves
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                   Animais Marinhos
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                      Répteis
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                 Natureza
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <h1 class="titulo">
+             Conheça o Mundo dos Animais
+        </h1>
+
+        <p class="text-center mb-5">
+            Descubra curiosidades sobre diferentes animais do nosso planeta!
+        </p>
+
+
+        <section class="container container-cards">
+
+            <div class="row g-4">
+
+
+                <div class="col-md-4">
+
+                    <div class="card shadow">
+
+                        <img src="https://s4.static.brasilescola.uol.com.br/be/2021/04/casal-de-leoes.jpg"
+                            class="card-img-top"
+                            alt="Leão">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                 Leão
+                            </h5>
+
+                            <p class="card-text">
+                                O leão é um dos maiores felinos do mundo e é conhecido como o rei dos animais.
+                            </p>
+
+
+                            <button type="button"
+                                class="btn btn-success"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalLeao">
+                                SAIBA MAIS
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="card shadow">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtgjVGSzG6rKT5c11569Hao6d5shkZQpEnjHpJNoI0Qf_4r4MixC6s3eBz&s=10"
+                            class="card-img-top"
+                            alt="Arara">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                 Arara
+                            </h5>
+
+                            <p class="card-text">
+                                As araras são aves coloridas e inteligentes encontradas principalmente em regiões tropicais.
+                            </p>
+
+                            <button type="button"
+                                class="btn btn-success"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalArara">
+                                SAIBA MAIS
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="card shadow">
+
+                        <img src="https://s2-umsoplaneta.glbimg.com/M0pGSSCR4pmJdULMZ_S5lo39BsY=/0x0:1993x1505/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_7d5b9b5029304d27b7ef8a7f28b4d70f/internal_photos/bs/2022/T/Y/9xUjF9QTuLjxmeWTRQ3A/gettyimages-88803028.jpg"
+                            class="card-img-top"
+                            alt="Golfinho">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                 Golfinho
+                            </h5>
+
+                            <p class="card-text">
+                                Golfinhos são mamíferos marinhos muito inteligentes e conhecidos por sua capacidade de comunicação.
+                            </p>
+
+                            <button type="button"
+                                class="btn btn-success"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalGolfinho">
+                                SAIBA MAIS
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <div class="modal fade">
+
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+
+                    <div class="modal-header bg-success text-white">
+
+                        <h1 class="modal-title fs-5" id="modalLeaoLabel">
+                             Curiosidades sobre o Leão
+                        </h1>
+
+                        <button type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal">
+                        </button>
+
+                    </div>
+
+                    <div class="modal-body">
+
+                        Os leões vivem principalmente na África.
+                        Eles são felinos sociais e costumam viver em grupos chamados alcateias.
+                        Os machos possuem uma característica juba ao redor da cabeça.
+
+                    </div>
+
+                    <div class="modal-footer">
+
+                        <button type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal">
+                            Fechar
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade">
+
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+
+                    <div class="modal-header bg-success text-white">
+
+                        <h1 class="modal-title fs-5" id="modalAraraLabel">
+                             Curiosidades sobre a Arara
+                        </h1>
+
+                        <button type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Fechar">
+                        </button>
+
+                    </div>
+
+                    <div class="modal-body">
+
+                        As araras possuem bicos fortes capazes de quebrar sementes
+                        e frutos. Suas penas apresentam cores muito vibrantes,
+                        tornando essas aves facilmente reconhecíveis.
+
+                    </div>
+
+                    <div class="modal-footer">
+
+                        <button type="button">
+                        
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal fade"
+            id="modalGolfinho"
+            tabindex="-1"
+            aria-labelledby="modalGolfinhoLabel"
+            aria-hidden="true">
+
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+
+                    <div class="modal-header bg-success text-white">
+
+                        <h1 class="modal-title fs-5" id="modalGolfinhoLabel">
+                             Curiosidades sobre o Golfinho
+                        </h1>
+
+                        <button type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Fechar">
+                        </button>
+
+                    </div>
+
+                    <div class="modal-body">
+
+                        Golfinhos utilizam sons para se comunicar e também
+                        utilizam a ecolocalização para encontrar objetos e
+                        identificar o ambiente ao redor.
+
+                    </div>
+
+                    <div class="modal-footer">
+
+                        <button type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal">
+                            Fechar
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="mb-0">
+             Mundo dos Animais
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWmXwz2F6X2R4jF0K1a8J7d9"
+        crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
+
